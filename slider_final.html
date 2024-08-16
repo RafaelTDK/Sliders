@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Logos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap'); /* Importar la fuente Cabin Semi Bold */
+
+        /* Estilos generales para el cuerpo y el contenedor del título */
+        .body-slider-BAB {
+            font-family: 'Cabin', sans-serif; /* Aplicar la fuente Cabin Semi Bold */
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* Estilo para el encabezado que muestra el título "Las mejores marcas" */
+        .header-slider-BAB {
+            width: 100%;
+            padding: 10px 10px 10px 30px;
+            background: linear-gradient(90deg, #2056a0 0%, #3dc1b2 100%); /* Degradado azul a verde */
+            color: white;
+            text-align: left;
+            font-size: 24px;
+            border-radius: 8px; /* Bordes redondeados */
+        }
+
+        /* Estilos generales para el carrusel */
+        .slider2 {
+            width: 100%;
+            height: auto;
+            margin: 20px auto; /* Centrar el carrusel con márgenes automáticos */
+            overflow: hidden; /* Ocultar los elementos que desbordan el contenedor */
+        }
+
+        /* Contenedor de la pista de slides */
+        .slider2 .slide-track {
+            display: flex;
+            animation: scroll2 42s linear infinite; /* Animación de desplazamiento continuo */
+            width: calc(200px * 42); /* Ajustar el ancho según la cantidad de slides */
+        }
+
+        /* Estilos para cada slide */
+        .slider2 .slide {
+            width: 200px; /* Ancho fijo de cada slide */
+            flex-shrink: 0; /* Evitar que los slides se encojan */
+        }
+
+        /* Estilo para las imágenes dentro de cada slide */
+        .slider2 .slide img {
+            width: 180px; /* Ancho de la imagen dentro del slide */
+            height: auto; /* Ajuste automático de la altura */
+            object-fit: contain; /* Mantener la proporción de la imagen */
+            padding: 0 10px; /* Espaciado a los lados de la imagen */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves para el efecto hover */
+        }
+
+        /* Efecto al pasar el cursor sobre un logo */
+        .slider2 .slide img:hover {
+            transform: scale(1.2,1.2); /* Escalar la imagen al 120% al pasar el cursor */
+        }
+
+        /* Detener la animación cuando el cursor pase por encima */
+        .slider2:hover .slide-track {
+            animation-play-state: paused; /* Pausar la animación cuando el cursor esté sobre el carrusel */
+        }
+
+        /* Animación para deslizar los slides */
+        @keyframes scroll2 {
+            0% {
+                transform: translateX(0); /* Iniciar desde la posición original */
+            }
+            100% {
+                transform: translateX(calc(-200px * 21)); /* Desplazarse una distancia equivalente a la mitad de los slides */
+            }
+        }
+    </style>
+</head>
+<body class="body-slider-BAB">
+    <!-- Encabezado que muestra el título "Las mejores marcas" con un fondo degradado -->
+    <div class="header-slider-BAB">
+        Las mejores marcas
+    </div>
+
+    <!-- Contenedor principal del carrusel -->
+    <div class="slider2">
+        <!-- Pista de slides que contiene los logos -->
+        <div class="slide-track">
+            <!-- AMD -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=AMD&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_AMD.png?v=1723512190" alt="AMD"></a></div>
+            <!-- Intel -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Intel&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Intel.png?v=1723512190" alt="Intel"></a></div>
+            <!-- Nvidia -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Nvidia&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Nvidia.png?v=1723512190" alt="Nvidia"></a></div>
+            <!-- Lenovo -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Lenovo&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Lenovo.png?v=1723512190" alt="Lenovo"></a></div>
+            <!-- HP -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=HP&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_HP.png?v=1723512190" alt="HP"></a></div>
+            <!-- Logitech -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Logitech&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Logitech.png?v=1723512190" alt="Logitech"></a></div>
+            <!-- Kingston -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Kingston&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Kingston.png?v=1723512190" alt="Kingston"></a></div>
+            <!-- MSI -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=MSI&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_MSI.png?v=1723512190" alt="MSI"></a></div>
+            <!-- Epson -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Epson&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_EPSON.png?v=1723512190" alt="Epson"></a></div>
+            <!-- Acer -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Acer&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Acer.png?v=1723512190" alt="Acer"></a></div>
+            <!-- Adata -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Adata&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Adata.png?v=1723512190" alt="Adata"></a></div>
+            <!-- Aspel -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Aspel&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Aspel.png?v=1723512190" alt="Aspel"></a></div>
+            <!-- Asus -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Asus&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Asus.png?v=1723512190" alt="Asus"></a></div>
+            <!-- Dell -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Dell&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Dell.png?v=1723512190" alt="Dell"></a></div>
+            <!-- Benq -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Benq&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Benq.png?v=1723512190" alt="Benq"></a></div>
+            <!-- Brother -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Brother&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Brother.png?v=1723512190" alt="Brother"></a></div>
+            <!-- Cooler Master -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Cooler%20Master&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Cooler_Master.png?v=1723512190" alt="Cooler Master"></a></div>
+            <!-- DeepCool -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=DeepCool&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_DeepCool.png?v=1723512190" alt="DeepCool"></a></div>
+            <!-- Balam Rush -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Balam%20Rush&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Balam_Rush.png?v=1723512190" alt="Balam Rush"></a></div>
+            <!-- Soluciones EXE -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Soluciones%20EXE&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_SolucionesEXE.png?v=1723512190" alt="Soluciones EXE"></a></div>
+            <!-- Gigabyte -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Gigabyte&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Gigabyte.png?v=1723512190" alt="Gigabyte"></a></div>
+
+            <!-- Duplicado -->
+
+            <!-- AMD -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=AMD&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_AMD.png?v=1723512190" alt="AMD"></a></div>
+            <!-- Intel -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Intel&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Intel.png?v=1723512190" alt="Intel"></a></div>
+            <!-- Nvidia -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Nvidia&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Nvidia.png?v=1723512190" alt="Nvidia"></a></div>
+            <!-- Lenovo -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Lenovo&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Lenovo.png?v=1723512190" alt="Lenovo"></a></div>
+            <!-- HP -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=HP&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_HP.png?v=1723512190" alt="HP"></a></div>
+            <!-- Logitech -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Logitech&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Logitech.png?v=1723512190" alt="Logitech"></a></div>
+            <!-- Kingston -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Kingston&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Kingston.png?v=1723512190" alt="Kingston"></a></div>
+            <!-- MSI -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=MSI&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_MSI.png?v=1723512190" alt="MSI"></a></div>
+            <!-- Epson -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Epson&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_EPSON.png?v=1723512190" alt="Epson"></a></div>
+            <!-- Acer -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Acer&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Acer.png?v=1723512190" alt="Acer"></a></div>
+            <!-- Adata -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Adata&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Adata.png?v=1723512190" alt="Adata"></a></div>
+            <!-- Aspel -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Aspel&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Aspel.png?v=1723512190" alt="Aspel"></a></div>
+            <!-- Asus -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Asus&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Asus.png?v=1723512190" alt="Asus"></a></div>
+            <!-- Dell -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Dell&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Dell.png?v=1723512190" alt="Dell"></a></div>
+            <!-- Benq -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Benq&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Benq.png?v=1723512190" alt="Benq"></a></div>
+            <!-- Brother -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Brother&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Brother.png?v=1723512190" alt="Brother"></a></div>
+            <!-- Cooler Master -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Cooler%20Master&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Cooler_Master.png?v=1723512190" alt="Cooler Master"></a></div>
+            <!-- DeepCool -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=DeepCool&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_DeepCool.png?v=1723512190" alt="DeepCool"></a></div>
+            <!-- Balam Rush -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Balam%20Rush&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Balam_Rush.png?v=1723512190" alt="Balam Rush"></a></div>
+            <!-- Soluciones EXE -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Soluciones%20EXE&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_SolucionesEXE.png?v=1723512190" alt="Soluciones EXE"></a></div>
+            <!-- Gigabyte -->
+            <div class="slide"><a href="https://innovacionytecnologia.net/search?q=Gigabyte&options%5Bprefix%5D=last"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Gigabyte.png?v=1723512190" alt="Gigabyte"></a></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Distribuidores</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap'); /* Importar la fuente Cabin Semi Bold */
+
+        /* Estilos generales para el cuerpo y el contenedor del título */
+        .carrusel-distribuidores-bab-body {
+            font-family: 'Cabin', sans-serif; /* Aplicar la fuente Cabin Semi Bold */
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo para el encabezado que muestra el título "Canales de venta oficiales" */
+        .carrusel-distribuidores-bab-header {
+            width: 100%;
+            padding: 10px 10px 10px 30px;
+            background: linear-gradient(90deg, #2056a0 0%, #3dc1b2 100%); /* Degradado azul a verde */
+            color: white;
+            text-align: left;
+            font-size: 24px;
+            border-radius: 8px; /* Bordes redondeados */
+        }
+
+        /* Estilos generales para el carrusel */
+        .carrusel-distribuidores-bab-slider {
+            width: 100%;
+            height: auto;
+            margin: 20px auto; /* Centrar el carrusel con márgenes automáticos */
+            overflow: hidden; /* Ocultar los elementos que desbordan el contenedor */
+        }
+
+        /* Contenedor de la pista de slides */
+        .carrusel-distribuidores-bab-slide-track {
+            display: flex;
+            animation: carrusel-distribuidores-bab-scroll 24s linear infinite; /* Animación de desplazamiento continuo */
+            width: calc(200px * 16); /* Ajustar el ancho según la cantidad de slides */
+        }
+
+        /* Estilos para cada slide */
+        .carrusel-distribuidores-bab-slide {
+            width: 200px; /* Ancho fijo de cada slide */
+            flex-shrink: 0; /* Evitar que los slides se encojan */
+        }
+
+        /* Estilo para las imágenes dentro de cada slide */
+        .carrusel-distribuidores-bab-slide img {
+            width: 180px; /* Ancho de la imagen dentro del slide */
+            height: auto; /* Ajuste automático de la altura */
+            object-fit: contain; /* Mantener la proporción de la imagen */
+            padding: 0 10px; /* Espaciado a los lados de la imagen */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves para el efecto hover */
+        }
+
+        /* Efecto al pasar el cursor sobre un logo */
+        .carrusel-distribuidores-bab-slide img:hover {
+            transform: scale(1.2,1.2); /* Escalar la imagen al 120% al pasar el cursor */
+        }
+
+        /* Detener la animación cuando el cursor pase por encima */
+        .carrusel-distribuidores-bab-slider:hover .carrusel-distribuidores-bab-slide-track {
+            animation-play-state: paused; /* Pausar la animación cuando el cursor esté sobre el carrusel */
+        }
+
+        /* Animación para deslizar los slides */
+        @keyframes carrusel-distribuidores-bab-scroll {
+            0% {
+                transform: translateX(0); /* Iniciar desde la posición original */
+            }
+            100% {
+                transform: translateX(calc(-200px * 8)); /* Desplazarse una distancia equivalente a la mitad de los slides */
+            }
+        }
+    </style>
+</head>
+<body class="carrusel-distribuidores-bab-body">
+    <!-- Encabezado que muestra el título "Canales de venta oficiales" con un fondo degradado -->
+    <div class="carrusel-distribuidores-bab-header">
+        Canales de venta oficiales
+    </div>
+
+    <!-- Contenedor principal del carrusel -->
+    <div class="carrusel-distribuidores-bab-slider">
+        <!-- Pista de slides que contiene los logos -->
+        <div class="carrusel-distribuidores-bab-slide-track">
+            <!-- Mercado Libre -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="https://www.mercadolibre.com.mx/pagina/bitandbytesystems5136" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Mercado_Libre.png?v=1723512190" alt="Mercado Libre"></a></div>
+            <!-- Amazon -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="https://www.amazon.com.mx/s?me=A1OW2MBM2HYTDR&marketplaceID=A1AM78C64UM0Y8" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Amazon.png?v=1723512190" alt="Amazon"></a></div>          
+            <!-- Liverpool -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="#" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Liverpool.png?v=1723512190" alt="Liverpool"></a></div> 
+            <!-- Walmart -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="#" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Walmart.png?v=1723512190" alt="Walmart"></a></div> 
+            <!-- Coppel -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="#" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Coppel.png?v=1723512190" alt="Coppel"></a></div>
+            <!-- Claro Shop -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="https://www.claroshop.com/tienda/126761/soluciones.exe-la-pieza-clave-a-tus-necesidades/pagina=1" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Claro_Shop.png?v=1723512190" alt="Claro Shop"></a></div>
+            <!-- Total Play -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="#" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Total_Play.png?v=1723512190" alt="Total Play"></a></div>
+            <!-- Sears -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="https://www.sears.com.mx/tienda/126761/soluciones.exe-la-pieza-clave-a-tus-necesidades/" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Sears.png?v=1723755671" alt="Sears"></a></div>
+            
+            <!-- Doble -->
+
+            <!-- Mercado Libre -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="https://www.mercadolibre.com.mx/pagina/bitandbytesystems5136" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Mercado_Libre.png?v=1723512190" alt="Mercado Libre"></a></div>
+            <!-- Amazon -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="https://www.amazon.com.mx/s?me=A1OW2MBM2HYTDR&marketplaceID=A1AM78C64UM0Y8" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Amazon.png?v=1723512190" alt="Amazon"></a></div>          
+            <!-- Liverpool -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="#" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Liverpool.png?v=1723512190" alt="Liverpool"></a></div> 
+            <!-- Walmart -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="#" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Walmart.png?v=1723512190" alt="Walmart"></a></div> 
+            <!-- Coppel -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="#" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Coppel.png?v=1723512190" alt="Coppel"></a></div>
+            <!-- Claro Shop -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="https://www.claroshop.com/tienda/126761/soluciones.exe-la-pieza-clave-a-tus-necesidades/pagina=1" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Claro_Shop.png?v=1723512190" alt="Claro Shop"></a></div>
+            <!-- Total Play -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="#" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Total_Play.png?v=1723512190" alt="Total Play"></a></div>
+            <!-- Sears -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="https://www.sears.com.mx/tienda/126761/soluciones.exe-la-pieza-clave-a-tus-necesidades/" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Sears.png?v=1723755671" alt="Sears"></a></div>
+
+            <!-- Triple -->
+
+            <!-- Mercado Libre -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="https://www.mercadolibre.com.mx/pagina/bitandbytesystems5136" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Mercado_Libre.png?v=1723512190" alt="Mercado Libre"></a></div>
+            <!-- Amazon -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="https://www.amazon.com.mx/s?me=A1OW2MBM2HYTDR&marketplaceID=A1AM78C64UM0Y8" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Amazon.png?v=1723512190" alt="Amazon"></a></div>          
+            <!-- Liverpool -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="#" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Liverpool.png?v=1723512190" alt="Liverpool"></a></div> 
+            <!-- Walmart -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="#" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Walmart.png?v=1723512190" alt="Walmart"></a></div> 
+            <!-- Coppel -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="#" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Coppel.png?v=1723512190" alt="Coppel"></a></div>
+            <!-- Claro Shop -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="https://www.claroshop.com/tienda/126761/soluciones.exe-la-pieza-clave-a-tus-necesidades/pagina=1" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Claro_Shop.png?v=1723512190" alt="Claro Shop"></a></div>
+            <!-- Total Play -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="#" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Total_Play.png?v=1723512190" alt="Total Play"></a></div>
+            <!-- Sears -->
+            <div class="carrusel-distribuidores-bab-slide"><a href="https://www.sears.com.mx/tienda/126761/soluciones.exe-la-pieza-clave-a-tus-necesidades/" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0889/0246/7884/files/Logo_Sears.png?v=1723755671" alt="Sears"></a></div>
+        </div>
+    </div>
+</body>
+</html>
